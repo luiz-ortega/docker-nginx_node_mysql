@@ -22,6 +22,8 @@ services:
       - nodenet
     ports:
       - "8080:80"
+    depends_on:
+      - node
 
   db:
     image: mysql:5.7
